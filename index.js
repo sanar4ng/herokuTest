@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
    var request = require('request');
    var options = {
        url: api_url,
-       qs: {start:1,display:100,sort:'sim',query:'치매치료'},
+       qs: {start:1,display:10,sort:'sim',query:'치매치료'},
        headers: {'X-Naver-Client-Id':client_id, 'X-Naver-Client-Secret': client_secret,
        'Access-Control-Allow-Origin': '*',}
     };
