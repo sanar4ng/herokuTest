@@ -4,7 +4,7 @@ const cors = require('cors');
 var client_id = 'lmPdtCLlemh9dJhdtQE6'; //api id
 var client_secret = 'DKG7frCgyG';       //api pw
 app.use(cors());
-
+var port = process.env.PORT || 3000;
 app.get('/', function (req, res) {
    var api_url = 'https://openapi.naver.com/v1/search/news?query=' + encodeURI("치매치료"); // json 결과
 
@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
    });
  });
 
- app.listen(3000, function () {
+ app.listen(port, function () {
    console.log('http://127.0.0.1:3000/search/news?query=검색어 app listening on port 3000!');
  });
 
