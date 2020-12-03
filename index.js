@@ -3,6 +3,9 @@ var app = express();
 const cors = require('cors');
 var client_id = 'lmPdtCLlemh9dJhdtQE6'; //api id
 var client_secret = 'DKG7frCgyG';       //api pw
+const http = require("http");
+
+
 app.use(cors());
 var port = process.env.PORT || 3000;
 app.get('/', function (req, res) {
@@ -31,3 +34,6 @@ app.get('/', function (req, res) {
  });
 
  //api server
+setInterval(function () {
+  http.get("https://ion-node-js-server.herokuapp.com/");
+}, 600000);
