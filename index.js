@@ -35,5 +35,5 @@ app.get('/', function (req, res) {
 
  //api server
 setInterval(function () {
-  http.get("https://ion-node-js-server.herokuapp.com/");
+  http.get("http://ion-node-js-server.herokuapp.com/");
 }, 600000);
