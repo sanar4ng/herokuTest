@@ -5,7 +5,7 @@ let users = {}
 var port = process.env.PORT || 3000;
 
 
-app.get('/number', (req, res) => {
+app.get('/', (req, res) => {
    console.log('who get in here/users');
    res.json(users)
 });
