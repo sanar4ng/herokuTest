@@ -24,7 +24,7 @@ app.post('/post', (req, res) => {
      console.log(users)
    });
 
-   res.write("이동");
+   res.write(inputData.number);
    res.end();
 });
 
