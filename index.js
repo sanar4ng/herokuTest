@@ -22,7 +22,7 @@ app.post('/post', (req, res) => {
      console.log("number : "+inputData.number);
      users.number=inputData.number
      console.log(users)
-     location.reload();
+     
    });
 
    res.write("이동");
